@@ -49,4 +49,11 @@ Object.assign(obj,{age:18,gender:'man'})//批量赋值
 //判断是否含属性名name
 obj.hasOwnProperty('name')
 //判断属性name是自身属性还是共有属性
+
+
+let obj = { name: 'aaa' }; 
+'name' in obj // true 
+'toString' in obj // true
+
+console.log(obj.hasOwnProperty('toString')) // false
 ```
