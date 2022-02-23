@@ -6,14 +6,14 @@
 * 'name' in obj和obj.hasOwnProperty('name') 的区别
 
 1. **声明对象的两种语法**
-*let声明*
+let声明
 规则:遵循块作用域，即使用范围不能超出{}
 不能重复声明
 可以赋值，也可以不赋值
 必须先声明再使用，否则会报错
 全局声明的let变量不会变成window的属性
 for循环配合let有奇效
-*const声明*
+const声明
 规则:几乎同let一样，但是声明一定要赋值，赋值后不能改。
 2. **如何删除对象的属性**
 ```JavaScript
@@ -48,7 +48,7 @@ Object.assign(obj,{age:18,gender:'man'})//批量赋值
 'name' in obj
 //判断是否含属性名name
 obj.hasOwnProperty('name')
-//判断属性name是自身属性还是共有属性
+// hasOwnProperty 只检查是否为自身属性，配合操作符 in 检查是否为共有属性。
 
 
 let obj = { name: 'aaa' }; 
